@@ -6,8 +6,10 @@ export type Props = {
   tipo?: string
 }
 
-const Paragraf = ({ children = '', tipo = 'principal' }) => (
-  <P tipo={tipo}>{children}</P>
+const Paragraf = ({ children = '', tipo = 'principal', fontSize = 0 }) => (
+  <P fontSize={fontSize} tipo={tipo}>
+    {children}
+  </P>
 )
 
 export default Paragraf
